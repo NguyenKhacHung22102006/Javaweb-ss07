@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group = 're.databinding'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation 'org.springframework:spring-webmvc:5.3.30'
+
+    compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
+
+    implementation 'javax.servlet:jstl:1.2'
+}
